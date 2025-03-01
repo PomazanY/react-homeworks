@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 31rem;
+}
+
+.title{
+    font-size: 25px;
+}
+
+.paragrah{
+    line-height: 1.3;
+}
