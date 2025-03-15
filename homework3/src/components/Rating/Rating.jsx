@@ -1,5 +1,5 @@
 import styles from './Rating.module.css'
-import ratingList from '../../data/ratingList'
+import ratingList from '../Rating/ratingList'
 
 import { useState } from 'react';
 

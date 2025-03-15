@@ -18,7 +18,7 @@ const List = () => {
         <div className={styles.card} key={item.id}>
             <p>Name: {item.name}</p>
             <p>Age: {item.age}</p>
-            <button onClick={()=> deleteItem(item.name)} >Delete</button>
+            <button onClick={()=> deleteItem(item.id)} >Delete</button>
         </div>
     ))
     return (
