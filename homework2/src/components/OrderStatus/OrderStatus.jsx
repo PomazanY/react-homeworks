@@ -1,10 +1,10 @@
 import "./OrderStatus.css"
 
-const OrderStatus =({items})=>{
-    const elements = items.map(item => <p key={item.orderId}>Заказ №{item.orderId}: {item.status}</p>)
+const OrderStatus =({orderId, status})=>{
+
     return (
         <div>
-            {elements}
+            Заказ №{orderId}: {status}
         </div>
     )
 }

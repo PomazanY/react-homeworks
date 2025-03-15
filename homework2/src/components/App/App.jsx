@@ -22,9 +22,10 @@ function App() {
       <Greeting name={item.name} />
       <p>ЗАДАНИЕ 2</p>
       <ShoppingList items={goods} />
-      <p>ЗАДАНИЕ 3</p>
-      <OrderStatus items={orders} />
-
+      <p>ЗАДАНИЕ 3</p >
+      {orders.map(order => (
+        <OrderStatus key={order.orderId} orderId={order.orderId} status={order.status} />
+      ))}
     </>
   )
 }
