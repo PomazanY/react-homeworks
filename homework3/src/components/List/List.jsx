@@ -9,9 +9,9 @@ import { useState } from "react";
 const List = () => {
     const [people, setPeople] = useState(items);
 
-    const deleteItem = (name) => {
+    const deleteItem = (id) => {
         setPeople(prevPeople => {
-            return prevPeople.filter(item => item.name !== name);
+            return prevPeople.filter(item => item.id !== id);
         })
     }
     const elements = people.map(item => (
