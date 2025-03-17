@@ -1,5 +1,5 @@
 const CityCard = ({ city }) => {
-    // if (!city) return <p>Выберите город, чтобы увидеть информацию</p>;
+    
     const elements = city.facts.map((fact, i) => <li key={i}>{fact}</li>)
     return (
         <div>

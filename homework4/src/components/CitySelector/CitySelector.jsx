@@ -10,7 +10,7 @@ const CitySelector = ({ items, onSelectCity }) => {
         <div>
           <h2>Выберите город:</h2>
           <select onChange={(event) => onSelectCity(event.target.value)}>
-            <option>{items[0].name}</option>
+            <option value={items[0].name}>{items[0].name}</option>
             {elements}
           </select>
         </div>
