@@ -3,6 +3,7 @@ const GoogleIcon = (props) => (
       xmlns="http://www.w3.org/2000/svg"
       width={97}
       height={98}
+      viewBox="0 0 97 98"
       fill="none"
       {...props}
     >

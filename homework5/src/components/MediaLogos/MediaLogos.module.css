@@ -1,0 +1,33 @@
+.container_logo{
+    border: 3px solid var(--text-color);
+    border-radius: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 36px;
+}
+
+.icon{
+    transition: all 0.3s;
+    fill: var(--text-color);
+    
+}
+
+.icon:hover{
+    fill: #1181F1;
+    transform: translateY(-10px);
+}
+
+@media screen and (max-width: 768px){
+.container_logo{
+    padding: 26px;
+    
+    
+  }  
+.icon{
+    width: 70px;
+    height: auto;
+   
+}
+}
