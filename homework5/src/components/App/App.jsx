@@ -1,13 +1,14 @@
-import HomePage from '../../pages/HomePage/HomePage'
+import SpotifySection from '../SpotifySection/SpotifySection'
 
 import '../../styles/style.css'
+// import './App.css'
 
 function App() {
   
 
   return (
     <>
-     <HomePage/>
+     <SpotifySection/>
     </>
   )
 }
