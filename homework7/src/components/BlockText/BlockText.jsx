@@ -6,6 +6,7 @@ import { languageContext } from '../../context/LanguareProvider';
 import items from './items';
 const BlockText = () => {
     const { language, toggleLanguage } = useContext(languageContext);
+    
     const transformItems = language === 'eng' ? items : [...items].reverse();
 
     const currentItem = transformItems.find(item => item.value === language);
