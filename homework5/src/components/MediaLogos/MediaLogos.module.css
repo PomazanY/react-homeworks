@@ -10,12 +10,13 @@
 
 .icon{
     transition: all 0.3s;
-    fill: var(--text-color);
+    color: var(--text-color);
+    cursor: pointer;
     
 }
 
 .icon:hover{
-    fill: #1181F1;
+    color: #1181F1;
     transform: translateY(-10px);
 }
 
