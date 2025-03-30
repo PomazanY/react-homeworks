@@ -16,7 +16,9 @@ const DynamicForm = () => {
         reset();
     }
 
-    const isNameFill = watch('firstField')
+    const isNameFill = watch('firstField');
+    const showSecondField = isNameFill.length >= 8;
+
 
     return (
         <form onSubmit={handleSubmit(OnSubmit)} className={styles.form}>
@@ -31,10 +33,10 @@ const DynamicForm = () => {
                 })}
                     id='first_title'
                     type="text"
-                    placeholder='first field' />
+                    placeholder='first field min. 8 characters' />
                 {errors.firstField && <p className={styles.error}>{errors.firstField.message}</p>}
             </div>
-            {isNameFill && <div className={styles.container}>
+            {showSecondField && <div className={styles.container}>
                 <label htmlFor="second_title">Second Field</label>
                 <input {...register('secondField', {
                     required: 'First Field is reduired',
@@ -45,7 +47,7 @@ const DynamicForm = () => {
                 })}
                     id="second_title"
                     type="text"
-                    placeholder='second field' />
+                    placeholder='second field min. 10 characters' />
                 {errors.secondField && <p className={styles.error}>{errors.secondField.message}</p>}
             </div>}
             <button>Submit</button>
