@@ -8,7 +8,7 @@ const ListItems = () => {
 
     const addItem = () => {
         if (inputValue === '') return;
-        setItems([...items, inputValue]);
+        setItems(prevItems => [...prevItems, inputValue]);
         setInputValue('')
 
     }
@@ -16,7 +16,7 @@ const ListItems = () => {
 
     useEffect(() => {
         console.log('Компонент ListItems обновлен')
-    },[]);
+    }, []);
 
     return (
         <div>
