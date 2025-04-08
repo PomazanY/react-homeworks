@@ -1,5 +1,6 @@
-import Filter from './Filter/Filter'
+import Filter from '../Filter/Filter'
 import UserList from '../UserList/UserList'
+
 import './App.css'
 
 function App() {
