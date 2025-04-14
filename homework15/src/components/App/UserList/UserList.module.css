@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    width: 200px;
+}
+
+.users {
+
+    font-size: 22px;
+    font-weight: 500;
+   
+}
+
+.ul {
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+  
+}
