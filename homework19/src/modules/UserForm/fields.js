@@ -1,8 +1,8 @@
 const fields ={
     username: {
-        label: "Username",
+        
         type: "text",
-        name: "username",
+        name: "name",
         placeholder: "Name",
         rules: [{
             required: true,
@@ -10,7 +10,7 @@ const fields ={
         }]
     },
     description: {
-        label: "Description",
+        
         type: "text",
         name: "description",
         placeholder: "Description",
