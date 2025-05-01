@@ -10,7 +10,6 @@ const users = {
   name: '',
   description: '',
 }
-
 function App() {
 
   const [formData, setFormData] = useState({ users });
@@ -18,7 +17,7 @@ function App() {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-        
+
     setFormData({
       ...formData,
       [name]: value,
@@ -41,7 +40,5 @@ function App() {
     </div>
 
   );
-
 }
-
 export default App;
