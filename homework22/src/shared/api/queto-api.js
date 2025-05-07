@@ -5,7 +5,7 @@ import axios from "axios"
 // });
 
 const quetoInstance = axios.create({
-    baseURl: 'https://api.thedogapi.com/v1/breeds'
+    baseURl: 'https://api.thecatapi.com/v1/images/search'
 });
 
 export const getQuetoApi = async () => {
