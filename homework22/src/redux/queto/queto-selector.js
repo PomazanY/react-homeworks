@@ -1,0 +1,1 @@
+export const selectQueto = (store) => store.queto;
