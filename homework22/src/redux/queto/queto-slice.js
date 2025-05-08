@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 import { fetchQueto } from "./queto-thunk";
 
 const initialState = {
-    id: 'Affenpinscher',
-    url: 'Small rodent hunting, lapdog',
+    id: '',
+    url: '',
     loading: false,
     error: null,
 }

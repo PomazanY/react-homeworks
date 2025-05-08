@@ -1,11 +1,9 @@
 import { useSelector, useDispatch } from "react-redux";
 
 import { selectQueto } from "../../redux/queto/queto-selector";
-// import { useEffect } from "react";
-import { fetchQueto } from "../../redux/queto/queto-thunk";
 import { useEffect } from "react";
+import { fetchQueto } from "../../redux/queto/queto-thunk";
 
-import { getQuetoApi } from "../../shared/api/queto-api";
 
 // import styles from "./QuetoList.module.css"
 
@@ -16,20 +14,11 @@ const QuetoList = () => {
     console.log(id);
     console.log(url);
 
+    
+    
     useEffect(() => {
-        const fetch = async ()=>{
-            const data = await getQuetoApi()
-            console.log(data);
-            return data;
-        }
-        fetch()
-        
-    }, [])
-    
-    
-    // useEffect(() => {
-    //     dispatch(fetchQueto())
-    // }, [dispatch])
+        dispatch(fetchQueto())
+    }, [dispatch])
 
     const handleNewQuote = () => {
         dispatch(fetchQueto());
