@@ -9,12 +9,9 @@ import { fetchQueto } from "../../redux/queto/queto-thunk";
 
 const QuetoList = () => {
 
-    const { id, url, loading, error } = useSelector(selectQueto);
+    const { queto, author, loading, error } = useSelector(selectQueto);
     const dispatch = useDispatch();
-    console.log(id);
-    console.log(url);
-
-    
+     
     
     useEffect(() => {
         dispatch(fetchQueto())
@@ -28,8 +25,8 @@ const QuetoList = () => {
     return (
         <>
             <h2>QuetoList</h2>
-            <p>{id}</p>
-            <p>{url}</p>
+            <p>{queto}</p>
+            <p>{author}</p>
             {loading && <p>Loading...</p>}
             {error && <p style={{ color: "red" }}>{error}</p>}
             <button onClick={handleNewQuote}> New Queto</button>

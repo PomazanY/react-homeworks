@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 import { fetchQueto } from "./queto-thunk";
 
 const initialState = {
-    id: '',
-    url: '',
+    queto: '',
+    author: '',
     loading: false,
     error: null,
 }
@@ -25,8 +25,8 @@ const quetoSlice = createSlice({
             .addCase(fetchQueto.rejected, rejected)
             .addCase(fetchQueto.fulfilled, (store, { payload }) => {
                 store.loading = false;
-                store.id = payload.id;
-                store.url = payload.url;
+                store.queto = payload.q;
+                store.author = payload.a;
             })
     }
 });

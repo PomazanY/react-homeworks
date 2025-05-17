@@ -7,7 +7,7 @@ export const fetchQueto = createAsyncThunk(
     async (_, { rejectWithValue }) => {
         try {
             const data = await getQuetoApi()
-            return data[0];
+            return data;
         }
         catch (error) {
             return rejectWithValue(error?.message);
